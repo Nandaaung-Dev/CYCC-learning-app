@@ -1,0 +1,6 @@
+:root {
+    --Text-color-01: #49505d;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
