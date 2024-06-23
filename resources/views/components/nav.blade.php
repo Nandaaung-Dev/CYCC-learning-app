@@ -18,7 +18,7 @@
                 class=" hover:border rounded-full active:text-[#FB56C2] active:font-bold px-4 py-2">Contact Us</a>
         </ul>
     </div>
-    <div class="flex justify-end lg:gap-10 gap-0 w-[200px] h-[50px] items-center md:mt-0">
+    <div class="flex justify-end lg:gap-5 gap-0 w-[300px] h-[50px] items-center md:mt-0">
         <div class=" hidden lg:block p-3 rounded-full hover:border border-[#FB56C2]">
             <img src="{{ asset('images/search.svg') }}" alt="Search" srcset="">
         </div>

@@ -15,7 +15,7 @@
                 the heart of China. Dive into immersive learning with passionate instructors and vibrant experiences!
             </p>
 
-            <div>
+            <div class=" flex">
                 <span class=" text-[#808081] text-[16px] me-4">Since</span>
                 <span class=" text-[#FB56C2] text-xl font-bold">2020</span>
                 <span class=" text-[#E3E3E3] text-2xl">----------</span>
