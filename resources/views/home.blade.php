@@ -17,7 +17,7 @@
 </head>
 
 <body class="font-dm-sans">
-    <div class="">
+    <div class="" id='home'>
         <x-nav></x-nav>
     </div>
     <div class="w-full h-[500px] bg-[#FEEEEE]"></div>
@@ -30,6 +30,7 @@
     <x-about />
     <div class="my-[20px]" style="border-bottom: 4px solid var(--Secondary, #FAF9FA);"></div>
     <x-contact />
+    <x-footer />
 </body>
 
 </html>
