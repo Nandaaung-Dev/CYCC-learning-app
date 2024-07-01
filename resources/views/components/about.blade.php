@@ -1,4 +1,4 @@
-<div id="about" class="container mx-auto h-screen pt-4">
+<div id="about" class="container mx-auto  pt-4">
     <div class=" flex justify-between items-center mb-[40px]">
         <div class=" text-lg sm:text-3xl  font-bold px-[20px]"
             style="border-left: 8px solid var(--Primary-color, #FB56C2);">

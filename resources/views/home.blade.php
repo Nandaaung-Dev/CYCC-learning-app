@@ -28,6 +28,8 @@
     <x-blog />
     <div class="my-[80px]" style="border-bottom: 4px solid var(--Secondary, #FAF9FA);"></div>
     <x-about />
+    <div class="my-[20px]" style="border-bottom: 4px solid var(--Secondary, #FAF9FA);"></div>
+    <x-contact />
 </body>
 
 </html>
