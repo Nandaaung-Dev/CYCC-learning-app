@@ -1,11 +1,11 @@
 <div id="about" class="container mx-auto  pt-4">
-    <div class=" flex justify-between items-center mb-[40px]">
+    <div class=" flex justify-between flex-wrap items-center mb-[40px]">
         <div class=" text-lg sm:text-3xl  font-bold px-[20px]"
             style="border-left: 8px solid var(--Primary-color, #FB56C2);">
             About Us
         </div>
     </div>
-    <div class=" flex justify-between items-end">
+    <div class=" flex flex-wrap justify-between items-end">
         <div class=" w-[600px] h-[300px] ">
             <h1 class=" text-[#FB56C2] font-bold text-[28px]">CYCC’s Story</h1>
             <p class="text-[#808081] my-[24px]">CYCC is a Chinese Language Center, where language meets culture, and

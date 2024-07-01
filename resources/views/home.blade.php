@@ -20,7 +20,11 @@
     <div class="" id='home'>
         <x-nav></x-nav>
     </div>
-    <div class="w-full h-[500px] bg-[#FEEEEE]"></div>
+    {{-- <div class="w-full h-[500px] bg-[#FEEEEE]"></div> --}}
+    <a href="" class=" cursor-pointer"> <img src="{{ asset('images/banner.png') }}" alt="" srcset=""
+            class="">
+    </a>
+
     <div class="">
         <x-features></x-features>
     </div>

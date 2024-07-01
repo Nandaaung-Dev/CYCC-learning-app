@@ -3,7 +3,7 @@
     <a href="/" class="flex-shrink-0">
         <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-[150px] lg:w-[210px] h-[50px] lg:h-[70px]">
     </a>
-    <div class="w-1/2 text-lg md:text-md text-center md:text-left mt-4 md:mt-0 hidden md:block">
+    <div class="w-1/2 text-md  text-center md:text-left mt-4 md:mt-0 hidden md:block">
         <ul class="flex justify-evenly gap-6 md:gap-0">
             <a href="/"
                 class=" hover:border rounded-full hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold px-4 py-2">Home</a>

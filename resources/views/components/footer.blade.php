@@ -3,7 +3,7 @@
         <a href="/">
             <img src="{{ asset('images/footer-2.png') }}" alt="" srcset="" class=" w-[210px]">
         </a>
-        <div class=" flex gap-6 flex-wrap justify-center">
+        <div class=" flex gap-6 flex-wrap justify-center text-md">
             <a href="#home" class=" hover:text-[#FB56C2]">Home</a>
             <a href="#courses" class=" hover:text-[#FB56C2]">Courses</a>
             <a href="#blogs" class=" hover:text-[#FB56C2]">Blogs</a>
