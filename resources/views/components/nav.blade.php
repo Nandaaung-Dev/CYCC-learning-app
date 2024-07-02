@@ -23,8 +23,9 @@
         <div class=" hidden lg:block p-3 rounded-full hover:border border-[#FB56C2]">
             <img src="{{ asset('images/search.svg') }}" alt="Search" srcset="">
         </div>
-        <div class="bg-[#FB56C2] px-6 md:px-[24px] py-4 md:py-[16px] rounded-full text-white">
-            <button>Log in</button>
-        </div>
+        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+            class="bg-[#FB56C2] px-6 md:px-[24px] py-4 md:py-[16px] rounded-full text-white">
+            Log in
+        </button>
     </div>
 </div>
