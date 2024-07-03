@@ -2,21 +2,18 @@
 
 namespace App\View\Components;
 
-use App\Models\Course;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Features extends Component
+class courseCard extends Component
 {
-
-    protected $courses;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        $this->courses = Course::query()->paginate(8);
+        //
     }
 
     /**
@@ -24,8 +21,6 @@ class Features extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.features', [
-            'courses' => $this->courses
-        ]);
+        return view('components.course-card');
     }
 }

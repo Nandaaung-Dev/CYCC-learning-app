@@ -1,0 +1,10 @@
+    @vite('resources/css/app.css')
+
+    <x-nav></x-nav>
+    <div class="mb-[40px]" style="border-bottom: 4px solid var(--Secondary, #FAF9FA);"></div>
+    <div class=" container mx-auto">
+        <x-course-card :courses="$courses"></x-course-card>
+        <div class="flex justify-end mt-2 text-[#FB56C2] font-mono"> {{ $courses->links() }}</div>
+    </div>
+    <div class="my-[40px]" style="border-bottom: 4px solid var(--Secondary, #FAF9FA);"></div>
+    <x-footer></x-footer>
