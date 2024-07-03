@@ -50,9 +50,9 @@
             <!-- Modal content -->
             <div class="relative rounded-lg shadow hello">
                 <!-- Modal header -->
-                <div class="flex justify-end mb-16">
+                <div class="flex justify-end mb-16 me-1">
                     <button type="button"
-                        class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="end-2.5 text-gray-400 bg-transparent hover:bg-[#FB56C2] hover:text-white rounded-full border border-[#FB56C2] text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                         data-modal-hide="authentication-modal">
                         <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 14 14">
@@ -62,7 +62,7 @@
                         <span class="sr-only">Close modal</span>
                     </button>
                 </div>
-                <div class="flex flex-col items-center pt-4">
+                <div class="flex flex-col items-center pt-4 ">
                     <img src="{{ asset('images/footer-2.png') }}" alt="" srcset="" class=" w-[212px]">
                     <h1 class=" py-[10px] font-bold text-2xl">Welcome to <span class=" text-[#FB56C2] ">CYCC</span></h1>
 
@@ -97,7 +97,7 @@
 <style>
     .hello {
         background-image: url(images/login-1.png);
-        background-size: 500px 550px;
+        background-size: 650px 700px;
         /* Width and height of the background image */
         /* Adjust width, maintain aspect ratio */
         background-repeat: no-repeat;
