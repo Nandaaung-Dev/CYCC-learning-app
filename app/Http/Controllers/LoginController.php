@@ -20,12 +20,24 @@ class LoginController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('dashboard'); // or wherever you want to redirect
+
+            toastr()->success('Successfully Login');
+            return back();
         }
 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+        toastr()->error('Invalid credentials!');
+        return back();
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        toastr()->success('Successfully Logout!');
+
+        return redirect('/'); // Redirect to wherever you want after logout
     }
 
     public function profile()

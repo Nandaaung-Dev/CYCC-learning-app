@@ -94,3 +94,12 @@
 </body>
 
 </html>
+<style>
+    .toast-error {
+        background-color: rgb(240, 57, 57);
+    }
+
+    .toast-title {
+        display: none
+    }
+</style>

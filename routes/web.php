@@ -19,7 +19,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/all-courses', [CourseController::class, 'list']);
+Route::get('/all-courses', [CourseController::class, 'list'])->middleware('auth.custom');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/profile', [LoginController::class, 'profile'])->name('profile');
