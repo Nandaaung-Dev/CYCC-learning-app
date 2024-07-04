@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/all-courses', [CourseController::class, 'list'])->middleware('auth.custom');
-Route::get('/course/{id}', [CourseController::class, 'show'])->name('course.show');
+Route::get('/course/{id}', [CourseController::class, 'show'])->name('course.show')->middleware('auth.custom');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');

@@ -18,6 +18,8 @@ class CourseController extends Controller
     public function show($id)
     {
         $course = Course::find($id);
-        dd($course);
+        return view('courses.show', [
+            'course' => $course
+        ]);
     }
 }
