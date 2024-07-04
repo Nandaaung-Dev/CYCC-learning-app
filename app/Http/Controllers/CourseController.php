@@ -17,9 +17,11 @@ class CourseController extends Controller
 
     public function show($id)
     {
+        $courses = Course::all();
         $course = Course::find($id);
         return view('courses.show', [
-            'course' => $course
+            'course' => $course,
+            'courses' => $courses
         ]);
     }
 }

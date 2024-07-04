@@ -15,7 +15,7 @@ class CourseSeeder extends Seeder
     {
         Course::insert([
             [
-                'title' => 'Beginner Chinese',
+                'title' => 'Beginner Chinese Vocabulary (20 Words 40 Sentences) Lesson 01',
                 'description' => 'An introductory course to learn basic Chinese phrases and vocabulary.',
                 'rating' => '4.5',
                 'duration' => '30 hours',
@@ -24,7 +24,7 @@ class CourseSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'title' => 'Intermediate Chinese',
+                'title' => '1000 Common Chinese Words Lesson 02',
                 'description' => 'A course for learners who have basic knowledge of Chinese and want to improve.',
                 'rating' => '4.7',
                 'duration' => '45 hours',
