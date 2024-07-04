@@ -1,6 +1,6 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
     @foreach ($courses as $course)
-        <div class="border p-[16px] rounded-xl">
+        <a href="{{ route('course.show', ['id' => $course->id]) }}" class="border p-[16px] rounded-xl cursor-pointer">
             <div class="">
                 <img src="{{ asset('images/cover_photo.png') }}" alt="" srcset="" class=" w-full rounded-xl">
             </div>
@@ -37,6 +37,6 @@
                     <span class="rounded-full text-[12px] px-[12px] py-[8px] text-[#FB56C2] bg-[#FDE2F4]">Mandrin</span>
                 </div>
             </div>
-        </div>
+        </a>
     @endforeach
 </div>

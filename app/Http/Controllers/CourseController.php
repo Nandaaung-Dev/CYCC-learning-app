@@ -14,4 +14,10 @@ class CourseController extends Controller
             'courses' => $data
         ]);
     }
+
+    public function show($id)
+    {
+        $course = Course::find($id);
+        dd($course);
+    }
 }
