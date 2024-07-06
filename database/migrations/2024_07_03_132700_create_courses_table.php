@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->longText('description');
-            $table->string('video');
+            $table->string('video')->nullable();
             $table->string('rating');
             $table->string('duration');
             $table->string('reviews');
