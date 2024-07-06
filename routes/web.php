@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 Route::get('/all-courses', [CourseController::class, 'list'])->middleware('auth.custom');
 Route::get('/course/{id}', [CourseController::class, 'show'])->name('course.show')->middleware('auth.custom');
+Route::get('/course-create', [CourseController::class, 'create'])->name('course.create');
+Route::post('/course-store', [CourseController::class, 'store'])->name('course.store');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
