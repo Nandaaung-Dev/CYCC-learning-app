@@ -10,9 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     <!-- stylesheet -->
-    {{-- <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" /> --}}
-
-    {{-- <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script> --}}
 
     @vite('resources/css/app.css')
     <style>
@@ -23,7 +20,7 @@
 </head>
 
 <body class="font-dm-sans">
-   
+
     <div class="" id='home'>
         <x-nav></x-nav>
     </div>
@@ -43,13 +40,12 @@
     <x-contact />
     <x-footer />
 
-   
+
 
 </body>
 
 </html>
 <style>
-   
     .toast-error {
         background-color: rgb(240, 57, 57);
     }
