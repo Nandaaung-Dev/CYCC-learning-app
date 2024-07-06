@@ -32,7 +32,14 @@
                 </button>
             @endguest
             @auth
-                <div>{{ auth()->user()->name }}</div>
+                @if (auth()->user()->name == 'Admin')
+                    <a href="/admin"
+                        class=" w-10 h-10 rounded-full bg-[#FB56C2] hover:bg-[#fc6dca] flex items-center justify-center text-lg text-white">{{ strtoupper(substr(auth()->user()->name, 0, 1)) }}</a>
+                @else
+                    <div
+                        class=" w-10 h-10 rounded-full bg-[#FB56C2] hover:bg-[#fc6dca] flex items-center justify-center text-lg text-white">
+                        {{ strtoupper(substr(auth()->user()->name, 0, 1)) }}</div>
+                @endif
                 <div>
                     <form action="{{ route('logout') }}" method="POST" class="mb-0">
                         @csrf

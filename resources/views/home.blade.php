@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     <!-- stylesheet -->
+    <link rel="icon" type="image/png" href="{{ asset('images/fav.png') }}">
 
     @vite('resources/css/app.css')
     <style>

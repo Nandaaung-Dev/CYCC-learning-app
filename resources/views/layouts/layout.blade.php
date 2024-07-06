@@ -11,6 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 
     @vite('resources/css/app.css')
+    <link rel="icon" type="image/png" href="{{ asset('images/fav.png') }}">
+
 </head>
 
 <body class="font-dm-sans">
