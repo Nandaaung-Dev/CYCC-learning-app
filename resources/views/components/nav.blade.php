@@ -22,9 +22,9 @@
             </ul>
         </div>
         <div class="flex justify-end lg:gap-5 gap-0 w-[300px] h-[50px] items-center md:mt-0">
-            <div class=" hidden lg:block p-3 rounded-full hover:border border-[#FB56C2]">
+            {{-- <div class=" hidden lg:block p-3 rounded-full hover:border border-[#FB56C2]">
                 <img src="{{ asset('images/search.svg') }}" alt="Search" srcset="">
-            </div>
+            </div> --}}
             @guest
                 <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                     class="bg-[#FB56C2] px-6 md:px-[24px] py-4 md:py-[16px] rounded-full text-white">

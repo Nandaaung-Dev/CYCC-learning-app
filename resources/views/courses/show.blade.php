@@ -13,12 +13,12 @@
                     <p class=" font-light text-slate-500"> {{ $course->description }}</p>
                 </div>
             </div>
-            <div class=" w-80 h-[700px] overflow-y-scroll overflow-x-hidden">
-                @foreach ($courses as $item)
+            <div class=" w-80 h-[700px] overflow-y-auto overflow-x-hidden cus">
+                @foreach ($courses as $index => $item)
                     <a href="{{ route('course.show', ['id' => $item->id]) }}">
                         <div
-                            class="mb-4 p-2 px-4 text-[18px] active:bg-[#cd50a1]  bg-[#FAF9FA] hover:bg-[#FB56C2] hover:text-white rounded-md">
-                            {{ $item->id }} . {{ $item->title }}
+                            class="mb-4 p-2 px-4 text-[18px] active:bg-[#cd50a1]  bg-[#FAF9FA] hover:bg-[#FB56C2] hover:text-white h-14 overflow-auto rounded-md hide">
+                            {{ $index + 1 }} . {{ $item->title }}
                         </div>
                     </a>
                 @endforeach
@@ -28,3 +28,36 @@
     </div>
     <hr class="">
 @endsection
+<style>
+    .hide::-webkit-scrollbar {
+        display: none;
+        /* for Chrome, Safari, and Opera */
+    }
+
+    .cus::-webkit-scrollbar {
+        width: 16px;
+        /* Width of the entire scrollbar */
+    }
+
+    .cus::-webkit-scrollbar-track {
+        background: whitesmoke;
+        /* Color of the track (scrollbar background) */
+        border-radius: 6px;
+        /* Rounded corners */
+        border: 3px solid #f1f1f1;
+    }
+
+    .cus::-webkit-scrollbar-thumb {
+        background-color: #f87dcd;
+        /* Color of the thumb (scrollbar handle) */
+        border-radius: 6px;
+        /* Rounded corners */
+        border: 3px solid #f1f1f1;
+        /* Padding around the thumb */
+    }
+
+    .cus::-webkit-scrollbar-thumb:hover {
+        background-color: #d0398f;
+        /* Color of the thumb when hovered */
+    }
+</style>

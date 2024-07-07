@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Validator;
 
 class CourseController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('is_admin')->except(['list', 'show']);
+    }
     public function list()
     {
         $data = Course::query()->paginate(12);

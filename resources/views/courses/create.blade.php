@@ -31,7 +31,7 @@
                         class=" p-2 bg-green-300 rounded">Submit</button></div>
             </form>
             <hr>
-            @if (!empty($courses))
+            @if ($courses->count() > 0)
 
                 <h3 class=" text-2xl mt-4">Course Lists</h3>
 
