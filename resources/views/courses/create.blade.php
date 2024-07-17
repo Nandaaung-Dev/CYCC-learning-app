@@ -49,10 +49,10 @@
 
                     </thead>
                     <tbody class="divide-y divide-gray-200">
-                        @foreach ($courses as $item)
+                        @foreach ($courses as $i => $item)
                             <tr>
                                 <td class="p-3 whitespace-nowrap text-sm font-medium text-gray-800 ">
-                                    {{ $item->id }}</td>
+                                    {{ $i+1 }}</td>
                                 <td class="p-3 whitespace-nowrap text-sm font-medium text-gray-800 ">
                                     {{ \Illuminate\Support\Str::limit($item->title, 40) }}</td>
                                 <td
