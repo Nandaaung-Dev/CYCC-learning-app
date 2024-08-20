@@ -2,18 +2,18 @@
 
 namespace App\Models;
 
-use App\Models\Video;
+use App\Models\Course;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Course extends Model
+class Video extends Model
 {
     use HasFactory;
 
     protected $guarded = [];
 
-    public function videos()
+    public function course()
     {
-        return $this->hasMany(Video::class);
+        return $this->belongsTo(Course::class);
     }
 }

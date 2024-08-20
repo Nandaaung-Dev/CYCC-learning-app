@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Video;
 use App\Models\Course;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -20,51 +21,58 @@ class CourseController extends Controller
         ]);
     }
 
-    public function show($id)
+    public function show($id, $videoId)
     {
+        // Find the course by its ID
+        $course = Course::findOrFail($id);
 
+        // Retrieve associated videos for the course
+        $videos = $course->videos()->get(); // Fetch all videos related to the course
 
-        $courses = Course::all();
-        $course = Course::find($id);
+        // Find the specific video by its ID
+        $video = $videos->find($videoId);
+
+        // Pass data to the view
         return view('courses.show', [
             'course' => $course,
-            'courses' => $courses
+            'videos' => $videos,
+            'video' => $video, // Pass the specific video
         ]);
     }
 
     public function create()
     {
         return view('courses.create', [
-            'courses' => Course::query()->paginate(5)
+            'courses' => Course::all()
         ]);
     }
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'title' => 'required|string|max:255|unique:courses,title',
-            'description' => 'required',
-            'duration' => 'required',
-            'video' => 'required|file|mimetypes:video/mp4',
+        // Validate the incoming request data
+        $request->validate([
+            'course_id' => 'required|exists:courses,id',
+            'video' => 'nullable|file|mimes:mp4,avi,mov|max:20480', // Validate file (optional)
         ]);
 
-        $course = new Course;
-        $course->title = $request->title;
-        $course->description = $request->description;
-        $course->duration = $request->duration;
-        $course->rating = rand(1, 5);
-        $course->reviews = rand(1, 1000);
+        // Find the course by its ID
+        $course = Course::findOrFail($request->input('course_id'));
 
+        // Check if a video file was uploaded
         if ($request->hasFile('video')) {
-            $path = $request->file('video')->store('videos', 'cycc');
+            // Store the uploaded video file
+            $path = $request->file('video')->store('videos', 'public');
 
-            $course->video = $path;
+            // Create a new video record
+            $video = new Video();
+            $video->path = $path; // Ensure your Video model has a `path` attribute
+            $video->course_id = $course->id; // Associate the video with the course
+            $video->save();
         }
-        $course->save();
 
-        return view('courses.create', [
-            'courses' => Course::query()->paginate(5)
-        ]);
+        // Redirect or return a view with a success message
+        return redirect()->route('home')->with('success', 'Video uploaded and course updated successfully.');
     }
+
     public function destroy(Course $course)
     {
         $course->delete();
