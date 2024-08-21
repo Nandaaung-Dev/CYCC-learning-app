@@ -23,7 +23,7 @@
             @foreach ($videos as $index => $item)
             <a href="{{ route('course.show', ['id' => $course->id, 'videoId' => $item->id]) }}">
                 <div class="mb-4 p-2 px-4 text-[18px] active:bg-[#cd50a1] bg-[#FAF9FA] hover:bg-[#FB56C2] hover:text-white h-14 overflow-auto rounded-md">
-                    {{ $index + 1 }} .Lesson - {{ $item->id }}
+                    {{ $index + 1 }} .Lesson - {{ $index + 1 }}
                 </div>
             </a>
             @endforeach

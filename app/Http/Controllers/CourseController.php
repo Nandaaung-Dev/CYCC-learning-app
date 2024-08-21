@@ -48,11 +48,13 @@ class CourseController extends Controller
     }
     public function store(Request $request)
     {
+
         // Validate the incoming request data
-        $request->validate([
-            'course_id' => 'required|exists:courses,id',
-            'video' => 'nullable|file|mimes:mp4,avi,mov|max:20480', // Validate file (optional)
-        ]);
+        // $request->validate([
+        //     'course_id' => 'required|exists:courses,id',
+        //     'video' => 'nullable|file|mimes:mp4,avi,mov|max:20480', // Validate file (optional)
+        // ]);
+        // dd($request->all());
 
         // Find the course by its ID
         $course = Course::findOrFail($request->input('course_id'));
