@@ -4,7 +4,7 @@
             style="border-left: 8px solid var(--Primary-color, #FB56C2);">
             Blogs & Activities
         </div>
-        @if (auth()->user()->name == 'Admin')
+        @if (auth()->user()?->name == 'Admin')
 
         <a href="/blog/create" class=" text-lg text-[#808081] flex items-center"> Create Blog <span><svg xmlns="http://www.w3.org/2000/svg"
                     width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -30,7 +30,7 @@
             </div>
             <div class="w-full">
                 <h3 class="pt-2 font-bold">{{ $blog->title }}</h3>
-                <p class="text-sm text-[#808081] ">{{ truncateText($blog->description, 150) }}</p>
+                <p class="text-sm text-[#808081] ">{{  substr($blog->description, 0, 150) }}</p>
             </div>
         </div>
         @endforeach
@@ -39,13 +39,3 @@
 
 
 </div>
-
-@php
-function truncateText($text, $maxLength = 100, $ending = '...') {
-if (strlen($text) > $maxLength) {
-$text = substr($text, 0, $maxLength);
-$text .= $ending;
-}
-return $text;
-}
-@endphp
