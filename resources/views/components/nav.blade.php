@@ -1,10 +1,12 @@
     @vite('resources/css/app.css')
+    <!-- {{ request()->path() }} -->
 
     <div id="nav"
         class="font-dm-sans text-body-2 text-text-color-01 flex w-full px-4 md:px-10 py-4 mx-auto justify-between items-center">
         <a href="/" class="flex-shrink-0">
             <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-[150px] lg:w-[210px] h-[50px] lg:h-[70px]">
         </a>
+        @if( request()->path() == '/' )
         <div class="w-1/2 text-lg  text-center md:text-left mt-4 md:mt-0 hidden md:block">
             <ul class="flex justify-evenly gap-6 md:gap-0">
                 <a href="/"
@@ -21,38 +23,40 @@
                     Us</a>
             </ul>
         </div>
+        @endif
         <div class="flex justify-end lg:gap-5 gap-0 w-[300px] h-[50px] items-center md:mt-0">
             {{-- <div class=" hidden lg:block p-3 rounded-full hover:border border-[#FB56C2]">
                 <img src="{{ asset('images/search.svg') }}" alt="Search" srcset="">
-            </div> --}}
-            @guest
-                <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
-                    class="bg-[#FB56C2] px-6 md:px-[24px] py-4 md:py-[16px] rounded-full text-white">
-                    Log in
-                </button>
-            @endguest
-            @auth
-                @if (auth()->user()->name == 'Admin')
-                    <a href="/admin"
-                        class=" w-10 h-10 rounded-full bg-[#FB56C2] hover:bg-[#fc6dca] flex items-center justify-center text-lg text-white">{{ strtoupper(substr(auth()->user()->name, 0, 1)) }}</a>
-                @else
-                    <div
-                        class=" w-10 h-10 rounded-full bg-[#FB56C2] hover:bg-[#fc6dca] flex items-center justify-center text-lg text-white">
-                        {{ strtoupper(substr(auth()->user()->name, 0, 1)) }}</div>
-                @endif
-                <div>
-                    <form action="{{ route('logout') }}" method="POST" class="mb-0">
-                        @csrf
-                        <button type="submit"
-                            class="bg-[#FB56C2] px-6 md:px-[24px] py-4 md:py-[16px] rounded-full text-white">
-                            Logout
-                        </button>
-                    </form>
-                </div>
-
-            @endauth
-
+        </div> --}}
+        @guest
+        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+            class="bg-[#FB56C2] px-6 md:px-[24px] py-4 md:py-[16px] rounded-full text-white">
+            Log in
+        </button>
+        @endguest
+        @auth
+        @if (auth()->user()->name == 'Admin')
+        <a href="/admin"
+            class=" w-10 h-10 rounded-full bg-[#FB56C2] hover:bg-[#fc6dca] flex items-center justify-center text-lg text-white">{{ strtoupper(substr(auth()->user()->name, 0, 1)) }}</a>
+        @else
+        <div
+            class=" w-10 h-10 rounded-full bg-[#FB56C2] hover:bg-[#fc6dca] flex items-center justify-center text-lg text-white">
+            {{ strtoupper(substr(auth()->user()->name, 0, 1)) }}
         </div>
+        @endif
+        <div>
+            <form action="{{ route('logout') }}" method="POST" class="mb-0">
+                @csrf
+                <button type="submit"
+                    class="bg-[#FB56C2] px-6 md:px-[24px] py-4 md:py-[16px] rounded-full text-white">
+                    Logout
+                </button>
+            </form>
+        </div>
+
+        @endauth
+
+    </div>
     </div>
 
     <!-- Main modal -->

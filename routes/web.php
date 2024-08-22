@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
@@ -29,3 +30,6 @@ Route::delete('/courses/{course}', [CourseController::class, 'destroy'])->name('
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/profile', [LoginController::class, 'profile'])->name('profile');
+Route::get('/blog/create', [BlogController::class, 'create']);
+Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store');
+
