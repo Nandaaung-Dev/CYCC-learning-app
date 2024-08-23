@@ -28,6 +28,7 @@ Route::post('/course-store', [CourseController::class, 'store'])->name('course.s
 Route::delete('/courses/{course}', [CourseController::class, 'destroy'])->name('course.destroy')->middleware('auth.custom');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/register', [LoginController::class, 'register'])->name('register');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/profile', [LoginController::class, 'profile'])->name('profile');
 Route::get('/blog/create', [BlogController::class, 'create']);

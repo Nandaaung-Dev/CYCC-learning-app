@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class LoginController extends Controller
 {
@@ -25,6 +28,42 @@ class LoginController extends Controller
 
         toastr()->error('Invalid credentials!');
         return back();
+    }
+
+    public function register(Request $request)
+    {
+
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8',
+        ]);
+
+
+        // Check if validation fails
+        if ($validator->fails()) {
+            // Display error messages using Toastr
+            foreach ($validator->errors()->all() as $error) {
+                toastr()->error($error);
+            }
+
+            // Redirect back with input and error messages
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        // Create a new user
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+
+        // Log the user in after registration
+        auth()->login($user);
+
+        toastr()->success('Registration successful!');
+
+        return redirect('/');
     }
 
     public function logout(Request $request)
