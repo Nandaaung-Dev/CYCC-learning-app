@@ -94,7 +94,7 @@
                     <form class="flex flex-col gap-9" action="{{ route('login') }}" method="POST">
                         @csrf
                         <div>
-                            <input type="email" name="email" id="email"
+                            <input type="email" name="email" id="email1"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-[#FB56C2] focus:border-[#FB56C2] block w-full p-2.5"
                                 placeholder="Your email" required />
                         </div>
@@ -151,7 +151,7 @@
                                 placeholder="Your Email" required />
                         </div>
                         <div>
-                            <input type="password" name="password" id="password"
+                            <input type="password" name="password" id="password1"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-[#FB56C2] focus:border-[#FB56C2] block w-full p-2.5"
                                 placeholder="Your Password" required />
                         </div>

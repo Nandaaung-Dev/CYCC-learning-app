@@ -24,15 +24,15 @@
     {{-- Card --}}
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         @foreach ($blogs as $blog)
-        <div class="border p-[16px] rounded-xl h-[400px]">
+        <a href="{{ route('blog.show', $blog->id)}}" class="border p-[16px] rounded-xl h-[400px] cursor-pointer">
             <div>
                 <img src="{{ asset('storage/blog/image/' . $blog->image) }}" alt="Blog Image" class="w-[310px] h-[203px] rounded-xl">
             </div>
             <div class="w-full">
                 <h3 class="pt-2 font-bold">{{ $blog->title }}</h3>
-                <p class="text-sm text-[#808081] ">{{  substr($blog->description, 0, 150) }}</p>
+                <p class="text-sm text-[#808081] ">{{ substr($blog->description, 0, 150) }}</p>
             </div>
-        </div>
+        </a>
         @endforeach
     </div>
     @endif

@@ -32,5 +32,5 @@ Route::post('/register', [LoginController::class, 'register'])->name('register')
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/profile', [LoginController::class, 'profile'])->name('profile');
 Route::get('/blog/create', [BlogController::class, 'create']);
+Route::get('/blog/{blog}', [BlogController::class, 'show'])->name('blog.show');
 Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store');
-

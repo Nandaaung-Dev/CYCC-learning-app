@@ -2,43 +2,51 @@
     <div class=" container mx-auto ">
 
         <div class=" flex justify-center items-start py-10 ">
-            <div class=" w-1/2  flex flex-col gap-4">
+            <div class="w-1/2 flex flex-col gap-4">
                 <div>
-                    <div class=" text-lg sm:text-3xl  font-bold px-[20px]"
-                        style="border-left: 8px solid var(--Primary-color, #FB56C2);">
+                    <div class="text-lg sm:text-3xl font-bold px-[20px]" style="border-left: 8px solid var(--Primary-color, #FB56C2);">
                         Contact Us
                     </div>
-                    <p class=" text-[#FB56C2] mt-[30px]">For any further inquiries, feel free to contact us.</p>
+                    <p class="text-[#FB56C2] mt-[30px]">For any further inquiries, feel free to contact us.</p>
                 </div>
-                <div class="relative min-w-[200px] h-12 w-[70%] rounded-3xl">
-                    <input
-                        class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-1 outline-[#FB56C2] focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-[#FB56C2]"
-                        placeholder=" " /><label
-                        class="flex w-full h-full text-gray-400 select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-[#FB56C2] before:border-blue-gray-200 peer-focus:before:!border-[#FB56C2] after:border-blue-gray-200 peer-focus:after:!border-[#FB56C2]">Your
-                        name
-                    </label>
-                </div>
-                <div class="relative min-w-[200px] h-12 w-[70%]">
-                    <input
-                        class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-1 outline-[#FB56C2] focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-[#FB56C2]"
-                        placeholder=" " /><label
-                        class="flex w-full h-full text-gray-400 select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-[#FB56C2] before:border-blue-gray-200 peer-focus:before:!border-[#FB56C2] after:border-blue-gray-200 peer-focus:after:!border-[#FB56C2]">Your
-                        Email
-                    </label>
-                </div>
-                <div class="relative min-w-[200px] h-32 w-[70%]">
-                    <input
-                        class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-1 outline-[#FB56C2] focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-[#FB56C2]"
-                        placeholder=" " /><label
-                        class="flex w-full h-full text-gray-400 select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-[#FB56C2] before:border-blue-gray-200 peer-focus:before:!border-[#FB56C2] after:border-blue-gray-200 peer-focus:after:!border-[#FB56C2]">Your
-                        Message
-                    </label>
-                </div>
-                <div>
-                    <button>
-                        <a href="mailto:nandaaung1689@gmail.com" target="_blank"
-                            class=" flex gap-2 items-center border hover:bg-[#FB56C2] group border-[#FB56C2] px-[45px] py-[10px] rounded-xl"><span
-                                class=" text-[#FB56C2] group-hover:text-white">Send</span>
+                <form id="contact-form" class="flex flex-col gap-4" onsubmit="return handleFormSubmit()">
+                    <div class="relative min-w-[200px] h-12 w-[70%] rounded-3xl">
+                        <input
+                            id="name_1"
+                            name="name"
+                            class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-1 outline-[#FB56C2] focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-[#FB56C2]"
+                            placeholder=" "
+                            required />
+                        <label
+                            class="flex w-full h-full text-gray-400 select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-[#FB56C2] before:border-blue-gray-200 peer-focus:before:!border-[#FB56C2] after:border-blue-gray-200 peer-focus:after:!border-[#FB56C2]">Your name
+                        </label>
+                    </div>
+                    <div class="relative min-w-[200px] h-12 w-[70%]">
+                        <input
+                            id="email_2"
+                            name="email"
+                            type="email"
+                            class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-1 outline-[#FB56C2] focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-[#FB56C2]"
+                            placeholder=" "
+                            required />
+                        <label
+                            class="flex w-full h-full text-gray-400 select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-[#FB56C2] before:border-blue-gray-200 peer-focus:before:!border-[#FB56C2] after:border-blue-gray-200 peer-focus:after:!border-[#FB56C2]">Your Email
+                        </label>
+                    </div>
+                    <div class="relative min-w-[200px] h-32 w-[70%]">
+                        <textarea
+                            id="message_3"
+                            name="message"
+                            class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-1 outline-[#FB56C2] focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-[#FB56C2]"
+                            placeholder=" "
+                            required></textarea>
+                        <label
+                            class="flex w-full h-full text-gray-400 select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-[#FB56C2] before:border-blue-gray-200 peer-focus:before:!border-[#FB56C2] after:border-blue-gray-200 peer-focus:after:!border-[#FB56C2]">Your Message
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit" class="flex gap-2 items-center border hover:bg-[#FB56C2] group border-[#FB56C2] px-[45px] py-[10px] rounded-xl">
+                            <span class="text-[#FB56C2] group-hover:text-white">Send</span>
                             <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
                                     fill="none">
 
@@ -47,11 +55,9 @@
                                         fill="#FB56C2" class="group-hover:fill-white" />
                                 </svg>
                             </span>
-                        </a>
-                    </button>
-
-                </div>
-
+                        </button>
+                    </div>
+                </form>
             </div>
             <div class=" w-1/2">
                 <img src="{{ asset('images/contact.png') }}" alt="" srcset="" class=" w-[500px] h-[500px]">
@@ -59,3 +65,22 @@
         </div>
     </div>
 </div>
+
+<script>
+    function handleFormSubmit() {
+        const name = document.getElementById('name_1').value;
+        const email = document.getElementById('email_2').value;
+        const message = document.getElementById('message_3').value;
+
+        const subject = 'Contact Form Submission';
+        const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+        const mailtoLink = `mailto:nandaaung1689@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // window.location.href = mailtoLink;
+
+        window.open(mailtoLink, '_blank');
+
+        return false; // Prevent default form submission
+    }
+</script>

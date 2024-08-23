@@ -37,4 +37,11 @@ class BlogController extends Controller
         // Redirect or return a response
         return redirect('/')->with('success', 'Blog post created successfully!');
     }
+
+    public function show(Blog $blog)
+    {
+        return view('blogs.show', [
+            'blog' => $blog
+        ]);
+    }
 }
