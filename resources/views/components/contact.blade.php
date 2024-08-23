@@ -75,7 +75,7 @@
         const subject = 'Contact Form Submission';
         const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
-        const mailtoLink = `mailto:nandaaung1689@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:nyeinsuhtwe27@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         // window.location.href = mailtoLink;
 
