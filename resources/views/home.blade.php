@@ -34,45 +34,57 @@
         <div class=" relative">
             <img src="{{ asset('images/banner.png') }}" alt="" srcset=""
                 class=" relative">
-            <div class="w-1/3 mx-auto h-auto absolute bottom-[2px] left-[25%]">
-                <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                    <!-- Carousel wrapper -->
-                    <div class="relative overflow-hidden rounded-md h-[260px]">
-                        <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <!-- <img src="{{ asset('images/banner.png') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
-                            <div class=" w-full bg-gradient-to-r from-[#fad0ec]  via-[#F8DEEF] to-[#fad0ec]  h-full flex items-center px-2 gap-4">
-                                <img src="{{ asset('images/slide.jpg') }}" alt="" srcset="" class=" w-40 h-40 rounded-full object-cover">
-                                <div>
-                                    <h1 class=" text-xl">Crystal </h1>
-                                    <p class=" text-sm text-slate-700">Hi there, I’m Crystal. For the past 3 years I’ve been teaching Mandarin online to students adults at all levels, beginners to advanced. As an English learner, I know how scary it can be learning and practicing languages so I make my lessons fun, clear and easy to understand. </p>
-                                </div>
-                            </div>
+
+        </div>
+    </a>
+
+    <div class=" container mx-auto px-[1%]">
+        <div class=" flex justify-between items-center mt-[20px]">
+            <div class=" text-lg sm:text-3xl  font-bold px-[20px]"
+                style="border-left: 8px solid var(--Primary-color, #FB56C2);">
+                Our Team
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[90%] mx-auto px-[6%] h-auto my-4">
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative overflow-hidden rounded-xl h-[260px]">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <!-- <img src="{{ asset('images/banner.png') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
+                    <div class=" w-full bg-gradient-to-r from-[#fce3f3] via-[#fef8fc] to-[#FFF]   h-full flex items-center px-4 gap-4">
+                        <img src="{{ asset('images/slide.jpg') }}" alt="" srcset="" class=" w-40 h-40 rounded-full object-cover">
+                        <div>
+                            <h1 class=" text-2xl">Crystal </h1>
+                            <p class=" text-base text-slate-700">Hi there, I’m Crystal. For the past 3 years I’ve been teaching Mandarin online to students adults at all levels, beginners to advanced. As an English learner, I know how scary it can be learning and practicing languages so I make my lessons fun, clear and easy to understand. I tailor my lessons to students who want to improve their Chinese speaking skills. If you want to speak Mandarin naturally, feel free to join my spoken course!</p>
                         </div>
-                        <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class=" w-full bg-gradient-to-r from-[#fad0ec]  via-[#F8DEEF] to-[#fad0ec]  h-full flex items-center px-2 gap-4">
-                                <img src="https://www.everydaychinese.com/wp-content/themes/ec_themes/dist/img/teacher-dengdeng.jpg" alt="" srcset="" class=" w-40 h-40 rounded-full object-cover">
-                                <div>
-                                    <h1 class=" text-xl">DengDeng </h1>
-                                    <p class=" text-sm text-slate-700">Hi, I’m Dengdeng. I majored in teaching Chinese as a second language in university and got an international Chinese teacher certificate. After graduation, I worked as a Chinese teacher in a college in Thailand.</p>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class=" w-full bg-gradient-to-r from-[#fce3f3] via-[#fef8fc] to-[#FFF]   h-full flex items-center px-4 gap-4">
+                        <img src="{{ asset('images/Cheng_Yinghui.jpg') }}" alt="" srcset="" class=" w-40 h-40 rounded-full object-cover">
+                        <div>
+                            <h1 class=" text-2xl">DengDeng </h1>
+                            <p class=" text-base text-slate-700">Hi, I’m Dengdeng. I majored in teaching Chinese as a second language in university and got an international Chinese teacher certificate. After graduation, I worked as a Chinese teacher in a college in Thailand. I have been teaching Chinese for 6 years. In Everyday Chinese team, I'm mainly responsible for course design and review. It's a great pleasure to meet you here and help you learn Chinese language!</p>
                         </div>
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class=" w-full bg-gradient-to-r from-[#fad0ec]  via-[#F8DEEF] to-[#fad0ec]  h-full flex items-center px-2 gap-4">
-                                <img src="https://www.everydaychinese.com/wp-content/themes/ec_themes/dist/img/teacher-joyce.jpg" alt="" srcset="" class=" w-40 h-40 rounded-full object-cover">
-                                <div>
-                                    <h1 class=" text-xl">Joyce</h1>
-                                    <p class=" text-sm text-slate-700">Hello! I’m Joyce. I’ve been teaching Chinese for 9 years. My students are from different parts of the world with diverse backgrounds and ages. Among them, the youngest is 6 and the oldest are in their seventies.</p>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class=" w-full bg-gradient-to-r from-[#fce3f3] via-[#fef8fc] to-[#FFF]   h-full flex items-center px-4 gap-4">
+                        <img src="{{ asset('images/th.jpg') }}" alt="" srcset="" class=" w-40 h-40 rounded-full ">
+                        <div>
+                            <h1 class=" text-2xl">Joyce</h1>
+                            <p class=" text-base text-slate-700">Hello! I’m Joyce. I’ve been teaching Chinese for 9 years. My students are from different parts of the world with diverse backgrounds and ages. Among them, the youngest is 6 and the oldest are in their seventies. My strength is to teach from the learner’s perspective and cater to their needs with the easiest to understand language. My goal is to make your every class with me a fruitful one!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </a>
+    </div>
 
     <div class="">
         <x-features></x-features>
