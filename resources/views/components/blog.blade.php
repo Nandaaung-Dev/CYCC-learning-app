@@ -30,7 +30,7 @@
             </div>
             <div class="w-full">
                 <h3 class="pt-2 font-bold">{{ $blog->title }}</h3>
-                <p class="text-sm text-[#808081] ">{{ substr($blog->description, 0, 150) }}</p>
+                <p class="text-sm text-[#808081] ">{!! substr($blog->description, 0, 100) !!}</p>
             </div>
         </a>
         @endforeach

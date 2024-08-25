@@ -14,13 +14,7 @@ class BlogController extends Controller
 
     public function store(Request $request)
     {
-        // Validate the form data
-        $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'title' => 'required|string|max:255',
-            'description' => 'required|string',
-        ]);
-
+        // dd($request->all());
         // Handle file upload
         if ($request->hasFile('image')) {
             $imageName = time() . '.' . $request->image->extension();
