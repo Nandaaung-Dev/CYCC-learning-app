@@ -51,36 +51,55 @@
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative overflow-hidden rounded-xl h-[260px]">
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <!-- <img src="{{ asset('images/banner.png') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
-                    <div class=" w-full bg-gradient-to-r from-[#fce3f3] via-[#fef8fc] to-[#FFF]   h-full flex items-center px-4 gap-4">
-                        <div class=" w-1/2 bg-slate-50 flex justify-center p-1 rounded-full">
-                            <img src="{{ asset('images/slide.jpg') }}" alt="" srcset="" class="rounded-full object-cover">
-
-                        </div>
-                        <div>
-                            <h1 class=" text-2xl">Crystal </h1>
-                            <p class=" text-base text-slate-700">Hi there, I’m Crystal. For the past 3 years I’ve been teaching Mandarin online to students adults at all levels, beginners to advanced. As an English learner, I know how scary it can be learning and practicing languages so I make my lessons fun, clear and easy to understand. I tailor my lessons to students who want to improve their Chinese speaking skills. If you want to speak Mandarin naturally, feel free to join my spoken course!</p>
-                        </div>
-                    </div>
-                </div>
                 <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <div class=" w-full bg-gradient-to-r from-[#fce3f3] via-[#fef8fc] to-[#FFF]   h-full flex items-center px-4 gap-4">
-                        <img src="{{ asset('images/Cheng_Yinghui.jpg') }}" alt="" srcset="" class=" w-40 h-40 rounded-full object-cover border-dashed border-4 border-slate-400">
+                        <div class=" w-1/2 bg-slate-50 flex justify-center p-1 rounded-full">
+
+                            <img src="{{ asset('images/image-1.png') }}" alt="" srcset="" class=" rounded-full object-cover">
+                        </div>
+
                         <div>
-                            <h1 class=" text-2xl">DengDeng </h1>
-                            <p class=" text-base text-slate-700">Hi, I’m Dengdeng. I majored in teaching Chinese as a second language in university and got an international Chinese teacher certificate. After graduation, I worked as a Chinese teacher in a college in Thailand. I have been teaching Chinese for 6 years. In Everyday Chinese team, I'm mainly responsible for course design and review. It's a great pleasure to meet you here and help you learn Chinese language!</p>
+                            <h1 class=" text-2xl">Cheng YingHui </h1>
+                            <p class=" text-sm text-slate-700">Hello, I'm Cheng YingHui! I have been teaching Chinese to learners for three years now, and I am passionate about helping students of all ages and skill levels connect with the language. My teaching approach focuses on making lessons engaging, clear, and enjoyable, as I understand the challenges that come with learning a new language. I aim to enhance my students' speaking skills while also sharing the rich traditions and culture of China. If you're looking to improve your Mandarin and gain a deeper appreciation for Chinese culture, I would love to help you on your learning journey!</p>
                         </div>
                     </div>
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <div class=" w-full bg-gradient-to-r from-[#fce3f3] via-[#fef8fc] to-[#FFF]   h-full flex items-center px-4 gap-4">
-                        <img src="{{ asset('images/th.jpg') }}" alt="" srcset="" class=" w-40 h-40 rounded-full ">
+                        <div class=" w-1/2 bg-slate-50 flex justify-center p-1 rounded-full">
+
+                            <img src="{{ asset('images/Img-1.png') }}" alt="" srcset="" class="  rounded-full object-cover ">
+                        </div>
                         <div>
-                            <h1 class=" text-2xl">Joyce</h1>
-                            <p class=" text-base text-slate-700">Hello! I’m Joyce. I’ve been teaching Chinese for 9 years. My students are from different parts of the world with diverse backgrounds and ages. Among them, the youngest is 6 and the oldest are in their seventies. My strength is to teach from the learner’s perspective and cater to their needs with the easiest to understand language. My goal is to make your every class with me a fruitful one!
+                            <h1 class=" text-2xl">Yang Yongxiang</h1>
+                            <p class=" text-sm text-slate-700">Hello! I'm Yang Yongxiang, a Chinese teacher dedicated to helping learners connect with the language. Although I no longer teach full-time, I still assist students in their Chinese learning journey by providing lessons and checking their homework. My goal is to make the learning process enjoyable and effective, ensuring that each student feels supported as they develop their skills in Chinese. Whether you're starting from scratch or looking to improve your proficiency, I'm here to help you every step of the way!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class=" w-full bg-gradient-to-r from-[#fce3f3] via-[#fef8fc] to-[#FFF]   h-full flex items-center px-4 gap-4">
+                        <div class=" w-1/2 bg-slate-50 flex justify-center p-1 rounded-full">
+
+                            <img src="{{ asset('images/image-1.png') }}" alt="" srcset="" class=" rounded-full object-cover">
+                        </div>
+
+                        <div>
+                            <h1 class=" text-2xl">Cheng YingHui </h1>
+                            <p class=" text-sm text-slate-700">Hello, I'm Cheng YingHui! I have been teaching Chinese to learners for three years now, and I am passionate about helping students of all ages and skill levels connect with the language. My teaching approach focuses on making lessons engaging, clear, and enjoyable, as I understand the challenges that come with learning a new language. I aim to enhance my students' speaking skills while also sharing the rich traditions and culture of China. If you're looking to improve your Mandarin and gain a deeper appreciation for Chinese culture, I would love to help you on your learning journey!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class=" w-full bg-gradient-to-r from-[#fce3f3] via-[#fef8fc] to-[#FFF]   h-full flex items-center px-4 gap-4">
+                        <div class=" w-1/2 bg-slate-50 flex justify-center p-1 rounded-full">
+
+                            <img src="{{ asset('images/Img-1.png') }}" alt="" srcset="" class="  rounded-full object-cover ">
+                        </div>
+                        <div>
+                            <h1 class=" text-2xl">Yang Yongxiang</h1>
+                            <p class=" text-sm text-slate-700">Hello! I'm Yang Yongxiang, a Chinese teacher dedicated to helping learners connect with the language. Although I no longer teach full-time, I still assist students in their Chinese learning journey by providing lessons and checking their homework. My goal is to make the learning process enjoyable and effective, ensuring that each student feels supported as they develop their skills in Chinese. Whether you're starting from scratch or looking to improve your proficiency, I'm here to help you every step of the way!
                             </p>
                         </div>
                     </div>
