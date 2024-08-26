@@ -29,8 +29,12 @@
                 <img src="{{ asset('storage/blog/image/' . $blog->image) }}" alt="Blog Image" class="w-[310px] h-[203px] rounded-xl">
             </a>
             <div class="w-full">
-                <h3 class="pt-2 font-bold">{{ $blog->title }}</h3>
-                <p class="text-sm text-[#808081]">{!! substr($blog->description, 0, 100) !!}</p>
+                <h3 class="pt-2 font-bold">
+                    <a href="{{ route('blog.show', $blog->id)}}">{{ $blog->title }}</a>
+                </h3>
+                <p class="text-sm text-[#808081]">
+                    <a href="{{ route('blog.show', $blog->id)}}">{!! substr($blog->description, 0, 100) !!}</a>
+                </p>
                 @if (auth()->user()?->name == 'Admin')
                 <form action="{{ route('blog.destroy', $blog->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this blog post?');" class="float-right">
                     @csrf
