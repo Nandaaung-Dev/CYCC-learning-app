@@ -2,7 +2,7 @@
     <div class=" flex justify-between items-center mb-[40px]">
         <div class=" text-lg sm:text-3xl  font-bold px-[20px]"
             style="border-left: 8px solid var(--Primary-color, #FB56C2);">
-            Blogs & Activities
+            <!-- Blogs & Activities -->
         </div>
         @if (auth()->user()?->name == 'Admin')
 

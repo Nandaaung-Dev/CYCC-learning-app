@@ -4,7 +4,7 @@
         <div class=" flex justify-center items-start py-10 ">
             <div class="w-1/2 flex flex-col gap-4">
                 <div>
-                    <div class="text-lg sm:text-3xl font-bold px-[20px]" style="border-left: 8px solid var(--Primary-color, #FB56C2);">
+                    <div class="text-lg text-[#FB56C2] sm:text-3xl font-bold px-[20px]" style="border-left: 8px solid var(--Primary-color, #FB56C2);">
                         Contact Us
                     </div>
                     <p class="text-[#FB56C2] mt-[30px]">For any further inquiries, feel free to contact us.</p>

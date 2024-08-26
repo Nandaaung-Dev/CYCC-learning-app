@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-<div class="flex justify-center">
+<div class="flex justify-center h-[70vh] mt-8">
     <div class="w-[1000px] bg-slate-200 h-[500px] rounded">
         <form id="Form" action="{{ route('blog.store') }}" method="POST" enctype="multipart/form-data" class="py-10 px-10 flex flex-col gap-4">
             @csrf

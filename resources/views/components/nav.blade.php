@@ -6,24 +6,23 @@
         <a href="/" class="flex-shrink-0">
             <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-[150px] lg:w-[210px] h-[50px] lg:h-[70px]">
         </a>
-        @if( request()->path() == '/' )
-        <div class="w-1/2 text-lg  text-center md:text-left mt-4 md:mt-0 hidden md:block">
-            <ul class="flex justify-evenly gap-6 md:gap-0">
-                <a href="/"
-                    class=" hover:border rounded-full hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold px-4 py-2">Home</a>
-                <a href="#courses"
-                    class=" hover:border rounded-full hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold px-4 py-2">Courses</a>
-                <a href="#blogs"
-                    class=" hover:border rounded-full hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold px-4 py-2">Blogs</a>
-                <a href="#about"
-                    class=" hover:border rounded-full hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold px-4 py-2">About
-                    Us</a>
-                <a href="#contact_us"
-                    class=" hover:border rounded-full hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold px-4 py-2">Contact
-                    Us</a>
+        <div class="w-1/2 text-lg text-center md:text-left mt-4 md:mt-0 hidden md:block">
+            <ul class="flex justify-center gap-20 md:gap-10">
+                <a href="/" class="{{ request()->is('/') ? 'active text-[#FB56C2] font-bold  border-b-4 border-[#FB56C2]' : ' hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold' }} px-4 py-2">
+                    Home
+                </a>
+                <a href="/courses" class="{{ request()->is('courses') ? 'active text-[#FB56C2] font-bold border-b-4 border-[#FB56C2]' : ' hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold' }} px-4 py-2">
+                    Courses
+                </a>
+                <a href="/blogs" class="{{ request()->is('blogs') ? 'active text-[#FB56C2] font-bold border-b-4 border-[#FB56C2]' : ' hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold' }} px-4 py-2">
+                    Blogs
+                </a>
+                <a href="/about" class="{{ request()->is('about') ? 'active text-[#FB56C2] font-bold border-b-4 border-[#FB56C2]' : ' hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold' }} px-4 py-2">
+                    About Us
+                </a>
             </ul>
         </div>
-        @endif
+
         <div class="flex justify-end lg:gap-5 gap-0 w-[300px] h-[50px] items-center md:mt-0">
             {{-- <div class=" hidden lg:block p-3 rounded-full hover:border border-[#FB56C2]">
                 <img src="{{ asset('images/search.svg') }}" alt="Search" srcset="">
@@ -64,6 +63,8 @@
 
     </div>
     </div>
+    <div class="my-[1px]" style="border-bottom: 4px solid var(--Secondary, #FAF9FA);"></div>
+
 
     <!-- Main modal -->
     <div id="authentication-modal" tabindex="-1" aria-hidden="true"
@@ -174,11 +175,12 @@
             background-position: center;
             object-fit: cover;
         }
+
         .signup {
-        background-image: url(images/login-1.png) !important;
-        background-size: 560px 700px;
-        background-repeat: no-repeat;
-        background-position: center;
-        object-fit: cover;
-    }
+            background-image: url(images/login-1.png) !important;
+            background-size: 560px 700px;
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: cover;
+        }
     </style>

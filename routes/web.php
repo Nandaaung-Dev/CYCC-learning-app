@@ -35,3 +35,12 @@ Route::get('/blog/create', [BlogController::class, 'create']);
 Route::get('/blog/{blog}', [BlogController::class, 'show'])->name('blog.show');
 Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store');
 Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('blog.destroy');
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/courses', function () {
+    return view('courses');
+});
+Route::get('/blogs', function () {
+    return view('blogs');
+});

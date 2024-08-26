@@ -1,9 +1,9 @@
 <div id="about" class="container mx-auto  pt-4">
     <div class=" flex justify-between flex-wrap items-center mb-[40px]">
-        <div class=" text-lg sm:text-3xl  font-bold px-[20px]"
+        <!-- <div class=" text-base text-[#FB56C2] sm:text-3xl  font-bold px-[20px]"
             style="border-left: 8px solid var(--Primary-color, #FB56C2);">
             About Us
-        </div>
+        </div> -->
     </div>
     <div class=" flex flex-wrap justify-between items-end">
         <div class=" w-[600px] h-[300px] ">
