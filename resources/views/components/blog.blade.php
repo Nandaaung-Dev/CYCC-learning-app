@@ -24,15 +24,27 @@
     {{-- Card --}}
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         @foreach ($blogs as $blog)
-        <a href="{{ route('blog.show', $blog->id)}}" class="border p-[16px] rounded-xl h-[400px] cursor-pointer">
-            <div>
+        <div class="border p-[16px] rounded-xl h-[400px] ">
+            <a href="{{ route('blog.show', $blog->id)}}" class="cursor-pointer">
                 <img src="{{ asset('storage/blog/image/' . $blog->image) }}" alt="Blog Image" class="w-[310px] h-[203px] rounded-xl">
-            </div>
+            </a>
             <div class="w-full">
                 <h3 class="pt-2 font-bold">{{ $blog->title }}</h3>
-                <p class="text-sm text-[#808081] ">{!! substr($blog->description, 0, 100) !!}</p>
+                <p class="text-sm text-[#808081]">{!! substr($blog->description, 0, 100) !!}</p>
+                @if (auth()->user()?->name == 'Admin')
+                <form action="{{ route('blog.destroy', $blog->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this blog post?');" class="float-right">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="text-red-600">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                </form>
+                @endif
             </div>
-        </a>
+
+
+        </div>
+
         @endforeach
     </div>
     @endif

@@ -38,4 +38,12 @@ class BlogController extends Controller
             'blog' => $blog
         ]);
     }
+
+    public function destroy($id)
+    {
+        $blog = Blog::findOrFail($id);
+        $blog->delete();
+
+        return redirect()->back()->with('success', 'Blog post deleted successfully.');
+    }
 }
