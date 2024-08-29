@@ -20,6 +20,9 @@
                 <a href="/about" class="{{ request()->is('about') ? 'active text-[#FB56C2] font-bold border-b-4 border-[#FB56C2]' : ' hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold' }} px-4 py-2">
                     About Us
                 </a>
+                <a href="/contact" class="{{ request()->is('contact') ? 'active text-[#FB56C2] font-bold border-b-4 border-[#FB56C2]' : ' hover:text-[#FB56C2] active:text-[#FB56C2] active:font-bold' }} px-4 py-2">
+                    Contact Us
+                </a>
             </ul>
         </div>
 

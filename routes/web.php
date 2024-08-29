@@ -44,3 +44,6 @@ Route::get('/courses', function () {
 Route::get('/blogs', function () {
     return view('blogs');
 });
+Route::get('/contact', function () {
+    return view('contact');
+});

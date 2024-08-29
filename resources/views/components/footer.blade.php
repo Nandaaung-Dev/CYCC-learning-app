@@ -10,7 +10,7 @@
             <a href="/courses" class=" hover:text-[#FB56C2]">Courses</a>
             <a href="/blogs" class=" hover:text-[#FB56C2]">Blogs</a>
             <a href="/about" class=" hover:text-[#FB56C2]">About Us</a>
-            <!-- <a href="#contact_us" class=" hover:text-[#FB56C2]">Contact Us</a> -->
+            <a href="/contact" class=" hover:text-[#FB56C2]">Contact Us</a>
         </div>
 
         <div class=" flex justify-center items-center gap-6">

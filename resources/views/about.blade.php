@@ -63,6 +63,6 @@
         </div>
     </div>
 </div>
-<div class="my-[20px]" style="border-bottom: 4px solid var(--Secondary, #FAF9FA);"></div>
-<x-contact />
+<div class="my-[40px]" style="border-bottom: 4px solid var(--Secondary, #FAF9FA);"></div>
+
 @endsection
